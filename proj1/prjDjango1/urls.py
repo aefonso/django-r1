@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
 
+from recipes.views import home, sobre, contato
+
 # HTTP REQUEST
 
 def my_view(request):
@@ -25,5 +27,8 @@ def my_view(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',home),
     path('sobre/',my_view),
+    path('contato/', contato),
+
 ]
