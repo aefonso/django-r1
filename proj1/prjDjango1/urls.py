@@ -19,16 +19,11 @@ from django.http import HttpResponse
 
 from recipes.views import home, sobre, contato
 
-# HTTP REQUEST
-
-def my_view(request):
-    # HTTP RESPONSE
-    return HttpResponse('Hello Django')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home),
-    path('sobre/',my_view),
+    path('sobre/',sobre),
     path('contato/', contato),
 
 ]
