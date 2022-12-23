@@ -5,10 +5,10 @@ from django.http import HttpResponse
 # HTTP RESPONSE
 
 def home(request):
-    return HttpResponse('HOME - Hello Django ')
+    return HttpResponse('home.html')
 
 def sobre(request):
-    return HttpResponse('SOBRE - Hello Django')
+    return HttpResponse('<h1>SOBRE - Hello Django</h1>')
 
 def contato(request):
-    return HttpResponse('CONTATO - Hello Django')
+    return HttpResponse('<h1>CONTATO - Hello Django</h1>')
