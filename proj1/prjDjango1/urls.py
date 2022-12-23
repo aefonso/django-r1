@@ -20,6 +20,7 @@ from django.http import HttpResponse
 from recipes.views import home, sobre, contato
 
 
+# HTTP REQUEST
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home),
