@@ -11,5 +11,5 @@ def sobre(request):
     return render(request,'sobre.html')
 
 def contato(request):
-    return HttpResponse('CONTATO - Hello Django')
+    return render(request,'contato.html')
 # Create your views here.
