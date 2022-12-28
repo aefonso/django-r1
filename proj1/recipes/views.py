@@ -1,3 +1,4 @@
+from unicodedata import name
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -5,7 +6,7 @@ from django.http import HttpResponse
 # HTTP RESPONSE
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'recipes/home.html', context={'name': 'Afonso Henrique'})
 
 def sobre(request):
     return render(request,'sobre.html')
