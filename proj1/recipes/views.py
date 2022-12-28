@@ -8,7 +8,7 @@ def home(request):
     return render(request, 'home.html')
 
 def sobre(request):
-    return HttpResponse('SOBRE - Hello Django')
+    return render(request,'sobre.html')
 
 def contato(request):
     return HttpResponse('CONTATO - Hello Django')
