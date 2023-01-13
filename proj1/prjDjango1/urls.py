@@ -25,6 +25,7 @@ from django.urls import path, include
 from django.http import HttpResponse
 from recipes.views import home, sobre, contato
 
+
 def my_view(request):
     # HTTP RESPONSE
     return HttpResponse('<h1>Hello Django</h1>')
@@ -36,5 +37,6 @@ urlpatterns = [
     path('sobre0/', my_view),
     path('sobre01/', sobre),
     path('contato0/', contato),
-    
+   
+
 ]
