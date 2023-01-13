@@ -13,4 +13,7 @@ def sobre(request):
 
 def contato(request):
     return render(request,'contato.html')
+
+def receitas(request):
+    return render(request, 'recipes/pages/receitas.html')
 # Create your views here.
