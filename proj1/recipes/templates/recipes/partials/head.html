@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
-    <!-- <link rel="stylesheet"  media="'screen" href="main.css"> -->
+    <link rel="stylesheet"  media="'screen" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -129,23 +129,17 @@
             border-color: var(--color-primary);
             background: var(--color-white);
         }
-        .search-form:focus-within,
-        .search-button {
+        .search-form:focus-within .search-button {
             color: var(--color-primary);
         }
         .main-content {
-            background: blueviolet;
+            background: cornflowerblue;
             padding-top: 1%;
         }
         .temp {
             height: 40rem;
             background-color: cyan;
         }
-        /* .temp2 {
-            height: 30rem;
-            background-color: green;
-            align-items: center;
-        } */
         .main-content-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -153,7 +147,7 @@
         }
         .recipe {
             background: var(--color-white);
-            box-shadow: -5px 5px rgba(0, 0, 0, -2);
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
             transform: scale(1);
             transition: all 300ms ease-in-out;
         }
@@ -164,19 +158,29 @@
             max-width: 64rem;
         }
         .recipe-list-item:hover {
-            transform: scale(1.25);
+            transform: scale(1.02);
+            box-shadow: -8px 8px 18px rgba(0, 0, 0, .25);
         }
-        .recipe-title-contaier {
+        .recipe-meta-container {
+            display: flex;
+            background-color: var(--color-gray-3);
+            padding: 1rem;
+        }
+        .recipe-meta {
+            padding-left: 60px;
+            text-align: left;
+        }
+        
+        .recipe-title-container {
             padding: var(--spacing-gutter-medium);
             padding-bottom: 2rem;
         }
         .recipe-author {
-            padding: var(--spacing-gutter-medium);
+            padding: 0 var(--spacing-gutter-medium);
         }
         .recipe-content {
             padding: var(--spacing-gutter-medium);
             padding-top: 2rem;
-            text-align: justify;
         }
         .recipe-author-item {
             color: var(--color-gray-4);
@@ -188,9 +192,35 @@
             text-decoration: none;
         }
         .recipe-author a:hover {
-            color: var(--color-alert-dark);
+            color: var(--color-primary-dark);
         }
-
+        .recipe-footer a {
+            background: var(--color-primary-dark);
+            display: block;
+            color: var(--color-white);
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5rem var(--spacing-gutter-medium);
+            transition: all 300ms ease-in-out;
+        }
+        .recipe-footer a:hover {
+            filter: brightness(2);
+        }
+        .main-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--color-primary-dark);
+            color: var(--color-white);
+            padding: var(--spacing-gutter-large);
+        }
+        .main-footer a {
+            color: var(--color-white);
+            text-decoration: none;
+            transition: all 300ms ease-in-out;
+        }
+        .main-footer a:hover {
+            filter: brightness(0.8);
+        }
     </style>
-
 </head>
