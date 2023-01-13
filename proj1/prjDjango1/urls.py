@@ -36,4 +36,5 @@ urlpatterns = [
     path('sobre0/', my_view),
     path('sobre01/', sobre),
     path('contato0/', contato),
+    
 ]
