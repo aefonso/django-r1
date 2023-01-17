@@ -15,5 +15,5 @@ def contato(request):
     return render(request,'contato.html')
 
 def receitas(request):
-    return render(request, 'recipes/pages/receitas.html')
+    return render(request, 'recipes/pages/receitas.html', context={'name': 'Afonso Henrique'})
 # Create your views here.
