@@ -19,4 +19,7 @@ def receitas(request):
 
 def receitas2(request):
     return render(request, 'recipes/pages/receitas2.html', context={'name': 'Afonso Henrique'})
+
+def receitas3(request):
+    return render(request, 'recipes/pages/receitas3.html', context={'name': 'Afonso Henrique'})
 # Create your views here.
